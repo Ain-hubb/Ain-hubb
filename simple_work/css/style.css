@@ -1,0 +1,503 @@
+html,
+body {
+	background-color:white;
+	width: 100%;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	scroll-behavior: smooth;
+	
+	
+}
+
+.new {
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%) 
+}
+
+._flyImage {
+
+	opacity: 1;
+	position: fixed;
+	z-index: 100;
+	transition: all 777ms ease 0s;
+}
+
+h2 {
+	margin: 0;
+}
+
+a { 
+	
+	color: #000 !important;
+	text-decoration: none
+   }
+
+.logo {
+	font-family: MADELikesSlab;
+	position: absolute;
+	font-size: 40px;
+	max-width: 130px;
+	text-align: center;
+	margin-top: 35px;
+}
+
+.header-wrap {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	left: 20px;
+}
+
+.button {
+	padding: 12px 24px;
+	margin-right: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: medium;
+	
+	
+}
+
+.button:active {
+	bottom: -1px;
+}
+
+.checkout {
+	margin-left: 80%;
+	margin-top: 40px;
+	position: relative;
+}
+
+
+.items {
+	margin-top: 40px;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+   
+}
+
+.item {
+position: relative;
+overflow: hidden;
+transition: 0.5s all;
+
+}
+
+.item .fit {
+	font-family: IgraSans;
+	font-size: 20px;
+}
+
+.item-head2 {
+	text-align: right;
+}
+
+.item .price {
+	font-family: IgraSans;
+	font-size: 30px;
+}
+
+.item .size {
+	font-family: IgraSans;
+	font-size: 18px;
+	opacity: 50%;
+}
+
+select{
+	border: none;
+	position: relative;
+	outline: none;
+	font-family: IgraSans;
+	font-size: 20px;
+
+	}
+
+.sizerow {
+	text-decoration-line: underline;
+	font-family: IgraSans;
+	font-size: 18px;
+	opacity: 50%;
+
+}
+
+.item-checkout {
+	font-family: IgraSans;
+	position: relative;
+	font-size: 20px;
+	transition: all 350ms ease-in-out;
+
+}
+
+img.checkout-arrow {
+	position: relative;
+	transition: all 350ms ease-in-out;
+}
+
+.item-checkout:hover {
+	color: #A9A9A9;
+	transition: all 350ms ease-in-out;
+}
+
+.item-checkout:hover .checkout-arrow {
+	left: 5px; 
+	transition: all 350ms ease-in-out; 
+}
+
+
+.item-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.size-wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+.items-hr {
+	border: 1px solid #A9A9A9;
+	transform: rotate(
+90deg);
+	margin-top: -240px;
+	width: 680px;
+}
+
+.item-img {
+	margin-left: 55px;
+}
+
+.modal-bg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.4);
+	display: none;
+	animation-name: modalbg;
+	animation-duration: 250ms
+	
+}
+
+.modal-wrapper {
+	padding: 50px;
+}
+
+@keyframes modalbg {
+	from {right: -300px; opacity: 0}
+	to {right: 0; opacity: 1}
+}
+
+.modal-form {
+	width: 50%;
+	height: 100%;
+	background-color: white;
+	margin-left: auto;
+}
+
+.modal-close {
+display: block;
+margin: 0px 0px 25px auto;
+	
+}
+
+.modal-close:hover {
+	transform: rotatez(90deg);
+	transition-duration: 300ms;
+
+}
+
+.modal-img {
+	height: 125px;
+	width: 125px;
+}
+
+.empty-cart {
+font-family: IgraSans;
+display: flex;
+font-size: 30px;
+color: #a6a6a6;
+justify-content: center;
+}
+
+.item-info {
+   display: flex;
+	position: relative;
+   align-items: center;
+   border-bottom: 1px solid #A9A9A9;
+   border-top: 1px solid #A9A9A9;
+	margin-bottom: 15px;
+	padding: 15px 0px;
+}
+
+.item-info:hover {
+	box-shadow: 1px 36px 70px rgb(94 94 94 / 14%);
+}
+
+.item-info-wrapper {
+	max-height: 350px;
+	overflow: auto;
+}
+
+.modal-size {
+	padding-left: 15px;
+	font-family: IgraSans;
+	font-size: 16px;
+}
+
+.modal-info-name {
+	font-family: IgraSans;
+	font-size: 20px;
+}
+
+.modal-info-size {
+	font-family: IgraSans;
+	font-size: 16px;
+	opacity: 50% 
+}
+
+.modal-info-size-wrap {
+	display: flex;
+	align-items: center;
+	
+}
+
+.modal-info-wrap {
+	margin-left: 40px;
+}
+
+.order-head {
+	font-family: IgraSans;
+	font-size: 30px; 
+}
+
+.order-price {
+	font-family: IgraSans;
+	font-size: 30px; 
+}
+
+.order-info {
+	font-family: IgraSans;
+	font-size: 14px;
+	opacity: 50%; 
+	max-width: 210px;
+	margin: 0;
+}
+
+.order-txt {
+	border: 1px transparent;
+	border-bottom: 1px solid #A9A9A9;
+	outline: none;
+	padding-bottom: 10px;
+	width: 45%;
+	padding-top: 30px;
+	margin-bottom: 25px;
+}
+
+.order-txt::placeholder, .order-txt[type="text"] {
+	font-family: IgraSans;
+	font-size: 16px;  
+	color: #000; 
+}
+
+.order-form-wrapper {
+	position: relative;
+}
+
+.order-input-text {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+
+
+.order-input-text-footer {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.order-button {
+	border: none;
+	background: transparent;
+	font-family: IgraSans;
+	font-size: 20px; 
+	background: url(../img/arrow.svg) no-repeat center right;
+	padding-right: 40px;
+	padding-bottom: 7px;
+}
+
+.checkout-text {
+	width: 14px;
+	height: 14px;
+	display: flex;
+	position: absolute;
+	background: #000000;
+	top: 20px;
+	right: 15px;
+	border-radius: 50%;
+	font-family: Igra Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 10px;
+	text-align: center;
+	color: #FFFFFF;
+	align-items: center;
+	justify-content: center;
+}
+
+.delete-item-arrow {
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	height: 10px;
+}
+
+.delete-item-arrow:hover {
+	box-shadow: 1px 36px 70px rgba(94, 94, 94, 0.3);
+	transition-duration: 300ms;
+}
+
+@media (max-width: 1250px) {
+
+	.logo {
+		font-size: 22px;
+		max-width: 95px;
+		margin-top: 20px;
+	}
+	
+	.checkout {
+		margin-left: 65%;
+		margin-top: 30px;
+	}
+	
+	.item-img {
+		height: 300px;
+		width: 300px;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	.item .fit {
+		font-family: IgraSans;
+		font-size: 20px;
+		margin-left: 0px;
+	}
+	
+	.size-wrap {
+		display: block;
+	}
+	
+	.item-footer {
+		display: block;
+	}
+	
+	.sizerow {
+		text-decoration-line: underline;
+		font-family: IgraSans;
+		font-size: 14px;
+		opacity: 50%;
+		position: absolute;
+		top: 420px;
+	}
+	
+	.item {
+		position: relative;
+		margin-top: -50px;
+		border-bottom: 1px solid #A9A9A9;
+		padding-bottom: 80px;
+		margin-bottom: 80px;
+		flex: 0 0 60%;
+	}
+	
+	.item-checkout {
+		position: absolute;
+		bottom: 20px;
+		right: 0px;
+	}
+	
+	.item .price {
+		font-family: IgraSans;
+		font-size: 18px;
+		bottom: 0px;
+		position: absolute;
+	}
+	
+	.items-hr {
+	display: none;
+	}
+	
+	.item-head2 {
+		text-align: left;
+	}
+	
+	
+	.items {
+		margin-top: 100px;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.modal-form {
+		width: 100%;
+	}
+
+	.order-txt::placeholder, .order-txt[type="text"] {
+	width: 100%;
+	}
+
+	
+
+	.order-input-text-footer {
+		justify-content: space-between;
+		max-width: 45rem;
+	}
+	html,body {position: relative;}
+
+	.modal-img {
+		height: 100px;
+		width: 100px;
+}
+.modal-info-name {
+	font-family: IgraSans;
+	font-size: 14px;
+}
+
+.modal-info-wrap {
+	margin-left: 15px;
+}
+
+.delete-item-arrow {
+	position: absolute;
+	right: 0px;
+	top: 10px;
+	height: 10px;
+}
+
+.order-head, .order-price {
+	font-family: IgraSans;
+	font-size: 20px;
+}
+
+.order-info {
+	font-family: IgraSans;
+	font-size: 10px;
+}
+
+	}
+
+	.hide {
+		display: none;
+	}
